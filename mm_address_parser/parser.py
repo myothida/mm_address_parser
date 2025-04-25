@@ -10,7 +10,7 @@ from .parser_utils import (
     get_village_name,
 )
 
-class AddressParser:
+class Parser:
     def __init__(self):
         self.extractors = {
         "state": get_region_name,

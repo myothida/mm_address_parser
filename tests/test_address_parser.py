@@ -1,8 +1,8 @@
 # tests/test_address_parser.py
-from address_parser.address_parser import AddressParser
+from mm_address_parser.parser import Parser
 
 def test_parse_full_address():
-    parser = AddressParser()
+    parser = Parser()
     address = "မန္တလေးတိုင်းဒေသကြီး မန္တလေးခရိုင် အမရပူမြို့နယ် အမရပူမြို့ ၁၀ရပ်ကွက် မဟာဗန္ဓုလလမ်း"
     
     result = parser.parse(address)
@@ -16,7 +16,7 @@ def test_parse_full_address():
   
 
 def test_partial_address():
-    parser = AddressParser()
+    parser = Parser()
     address = "ရန်ကုန်တိုင်းဒေသကြီး လှိုင်မြို့နယ်"
 
     result = parser.parse(address)
