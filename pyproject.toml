@@ -1,6 +1,6 @@
 [project]
 name = "mm_address_parser"
-version = "0.1.0"
+version = "0.1.1"
 description = "A parser for Myanmar addresses"
 authors = [{ name = "Myo Thida", email = "mmdt@istarvz.com" }]
 readme = "README.md"
@@ -18,3 +18,6 @@ Homepage = "https://github.com/myothida/mm_address_parser"
 
 [project.optional-dependencies]
 dev = ["pytest", "black", "isort", "mypy"]
+
+[tool.setuptools]
+packages = ["address_parser"]
