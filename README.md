@@ -18,27 +18,18 @@ This project parses the given address into different components (state, district
 
 Install from [PyPI](https://pypi.org/project/mm-address-parser/):
 
-```bash
+```
 pip install mm_address_parser
-
+```
 ---
-## Usage
-```bash
-from address_parser import address_parser
 
-parsed = address_parser.parse("ရန်ကုန်တိုင်းဒေသကြီး, လှိုင်မြို့နယ်, သီလဝါလမ်း")
+### Usage
+```
+from mm_address_parser.parser import Parser
+parser = Parser()
+parsed = parser.parse("ရန်ကုန်တိုင်းဒေသကြီး, လှိုင်မြို့နယ်, သီလဝါလမ်း")
 print(parsed)
-
----
-## Development setup
-
-```bash
-git clone https://github.com/myothida/mm_address_parser.git
-cd mm_address_parser
-python -m venv venv
-source venv/bin/activate
-pip install .[dev]
-
+```
 ---
 ## Credits and Licensing
 
@@ -52,3 +43,4 @@ You are free to use, modify, and distribute the code and dataset with proper att
 > © 2025 Myo Thida. All rights reserved.  
 > If you use this project in your work, please cite or link back to this repository and the parent project:  
 > _"From Words to Coordinates: Mapping Myanmar's Unstructured Addresses to Coordinates."_
+

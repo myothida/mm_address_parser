@@ -1,6 +1,6 @@
 [project]
 name = "mm_address_parser"
-version = "0.1.2"
+version = "0.1.3"
 description = "A parser for Myanmar addresses"
 authors = [{ name="myothida", email="mmdt@istarvz.com" },]
 readme = "README.md"
