@@ -28,9 +28,7 @@ class Parser:
         """
         address = normalize_text(address)
         parts = re.split(r"[၊။\s]+", address)
-
         parsed = {}
-
         for part in parts:
             cleaned = part.strip()
             for label, extractor in self.extractors.items():
